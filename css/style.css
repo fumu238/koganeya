@@ -250,7 +250,7 @@ li {
 .burger_nav {
   width: 35px;
   cursor: pointer;
-  right: 20px;
+  right: 5vw;
   top: 20px;
   position: fixed;
   z-index: 10;
