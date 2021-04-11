@@ -1,12 +1,14 @@
 .gnav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
+	height: 100vh;
 	background-color: #7e212c;
 	z-index: 4;
 	padding: 70px 1vw 70px;
 	box-sizing: border-box;
+	overflow-y: scroll;
 	transition: 0.3s;
 	transform: translateX(-100%);
 	opacity: 0.7;
@@ -27,9 +29,6 @@
 .gnav__menu_list {
 	font-size: 1.4rem;
 	margin-left: 10px;
-	// &:nth-of-type(1) {
-	// 	margin-left: 130px;
-	// }
 }
 
 .gnav__menu {
@@ -91,12 +90,8 @@
 }
 
 @media screen and (max-width: 460px) {
-	.footer {
-		&__inner {
-			padding: 40px 4vw 40px;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
+	.gnav__inner {
+		padding: 0 4vw 20px;
 	}
 	.gnav__menu_list {
 		&:nth-of-type(1) {

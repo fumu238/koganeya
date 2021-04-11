@@ -7,7 +7,11 @@
     position: fixed;
     z-index: 10;
 
+    &.cross.burger_nav {
+        background-color: #7e212c;
+    }
 }
+
 .burger_nav__line {
     display: block;
     background-color: #222222;
@@ -25,7 +29,6 @@
     } 
     &.cross.burger_nav__line-mid {
         transform: scale(0.5);
-        // background-color:#FFEDED;
         opacity:0;
     } 
     &.cross.burger_nav__line-bottom {
@@ -49,6 +52,5 @@
 
     .burger_nav {
         top: 15px;
-        
     }
 }
