@@ -256,6 +256,10 @@ li {
   z-index: 10;
 }
 
+.burger_nav.cross.burger_nav {
+  background-color: #7e212c;
+}
+
 .burger_nav__line {
   display: block;
   background-color: #222222;
@@ -305,15 +309,17 @@ li {
 }
 
 .gnav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
+  height: 100vh;
   background-color: #7e212c;
   z-index: 4;
   padding: 70px 1vw 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-y: scroll;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: translateX(-100%);
@@ -408,13 +414,8 @@ li {
 }
 
 @media screen and (max-width: 460px) {
-  .footer__inner {
-    padding: 40px 4vw 40px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .gnav__inner {
+    padding: 0 4vw 20px;
   }
   .gnav__menu_list:nth-of-type(1) {
     margin-left: 0;
