@@ -34,7 +34,7 @@ $(function(){
 	$('.burger_nav').click(function() {
 
 			$('.gnav').toggleClass('gnav-open'); // メニューオープン
-			$('body').toggleClass('noscroll'); // スクロール禁止
+			// $('body').toggleClass('noscroll'); // スクロール禁止
 			$('.burger_nav__line').toggleClass('cross'); // ボタン変形
 			$('.burger_nav__txt').toggleClass('cross'); // ボタン変形
 
