@@ -1,0 +1,95 @@
+.btn {
+	display: block;
+	position: relative;
+	background-color: #7e212c;
+	font-family: serif;
+	border: none;
+	padding: 15px;
+	max-width: 200px;
+	box-sizing: border-box;
+	font-size: 1.4rem;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	color: #000;
+
+	&__inner {
+		color: #fff;
+		position: relative;
+		transition: 0.5s;
+	}
+	// 中央モディファイア
+	&-center {
+		margin: 0 auto;
+	}
+	// dubmitボディファイア
+	&-submit {
+		color: #fff;
+	}
+
+	// ボタン横並び中央
+	&__wrapper {
+		text-align: center;
+		// vertical-align: middle;
+
+		.btn {
+			display: inline-block;
+			// インラインはmax効かない？
+			width: 200px;
+
+			&:nth-of-type(2) {
+				margin-left: 10px;
+			}
+		}
+	}
+	// ボタンエフェクト共通
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		box-sizing: border-box;
+	}
+	// ホバー時のボタンボーダー
+	&::after {
+		width: 100%;
+		border: solid 1px #7e212c;
+		background-color: rgba(0, 0, 0, 0);
+	}
+	// ホバー時のスライド要素
+	&::before {
+		width: 130%;
+		height: 100%;
+		background-color: #faeff0;
+		transform: translateX(-110%) skew(-20deg);
+		transition: 0.5s;
+	}
+	&:hover::before {
+		transform: translateX(0%);
+	}
+	&:hover &__inner {
+		color: #7e212c;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.btn {
+		&__wrapper {
+			
+			.btn {
+				display: block;
+
+				&:nth-of-type(1) {
+					margin-bottom: 10px;
+				}
+
+				&:nth-of-type(2) {
+					margin: 0 auto;
+				}
+			}
+		}
+		
+	}
+}

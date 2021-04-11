@@ -1,0 +1,52 @@
+.insta_container {
+    // position: relative;
+	// max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+
+}
+.insta__img {
+    position: relative;
+	width: 16%;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        opacity: .7;
+    }
+
+	&::before {
+		content: "";
+		display: block;
+		padding-top: 100%;
+	}
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .insta_container {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    
+    }
+    .insta__img {
+        position: relative;
+        width: 33.333333%;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+}

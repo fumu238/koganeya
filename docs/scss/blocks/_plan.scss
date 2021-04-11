@@ -1,0 +1,104 @@
+.plan_card__wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.plan_card {
+	position: relative;
+	width: 48%;
+    box-sizing: border-box;
+    box-shadow:5px 5px 5px rgb(150, 150, 150) ;
+    margin-bottom: 30px;
+
+    // 画像は何かしらで囲む
+    // 画像の大きさがバラバラの時はpadding-topで高さを決める
+	.image__wrap {
+		position: relative;
+		overflow: hidden;
+		padding-top: 50%;
+
+        // 黒い透過カバー
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0; // 4方向０で全体
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			z-index: 1;
+            transition:.5s;
+		}
+
+        &:hover::before {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        // これだと透過カバーがチカチカする   
+        // &:hover img {
+        //     transform: scale(1.1);
+        // }
+        
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		object-fit: cover;
+        transition: .5s;// ちらつきはこれが原因
+        // これでtransitionのちらつき解決した
+        backface-visibility: hidden;
+
+        // ここだとホバーできない
+        // &:hover {
+        //     transform: scale(1.1);
+        // }
+	}
+
+    &:hover &__img {
+        transform: scale(1.1);
+    }
+    
+
+	&__txt {
+		font-size: 2.8rem;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+
+}
+
+@media screen and (max-width: 760px) {
+
+	.plan_card {
+		width: 100%;
+		margin-bottom: 10px;
+
+		.image__wrap {
+			padding-top: 30%;
+
+		}
+		&__txt {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media screen and (max-width: 460px) {
+
+	.plan_card {
+		.image__wrap {
+			padding-top: 50%;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+.access {
+    background-color: #F7F2EC;
+}
+.access__desc {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+}
+.desc__container {
+    padding: 20px;
+}
+
+.desc__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+
+    &-car {
+        &::before {
+            content: '';
+            display: inline-block;
+            background-image: url(../img/blocks/map/car.png);
+            background-size:cover;
+            vertical-align: middle;
+            width:45px;
+            height:45px;
+        }
+    }
+    &-train {
+    
+        &::before {
+            content: '';
+            display: inline-block;
+            background-image: url(../img/blocks/map/train.png);
+            background-size:cover;
+            vertical-align: middle;
+            width:45px;
+            height:45px;
+        }
+    }
+}
+
+
+.desc__txt {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 760px) {
+    .desc__title {
+        font-size: 1.8rem;
+    
+        &-car {
+            &::before {
+                width:30px;
+                height:30px;
+            }
+        }
+        &-train {
+        
+            &::before {
+                width:30px;
+                height:30px;
+            }
+        }
+    }
+
+}
