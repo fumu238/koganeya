@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄金屋</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#">
+            <div class="title title-in_header">黄金屋</div>
+        </a>
+        <div class="burger_nav">
+            <span class="burger_nav__line burger_nav__line-top"></span>
+            <span class="burger_nav__line burger_nav__line-mid"></span>
+            <span class="burger_nav__line burger_nav__line-bottom"></span>
+            <p class="burger_nav__txt">MENU</p>
+        </div>
+        <div class="gnav">
+            <div class="gnav__wrapper">
+                <div class="gnav__inner">
+                    <ul class="gnav__menu_list">
+                        <li class="gnav__menu"><a href="#" class="link">よくあるご質問</a></li>
+                        <li class="gnav__menu"><a href="#" class="link">サイトマップ</a></li>
+                        <li class="gnav__menu"><a href="#" class="link">お問い合わせ</a></li>
+                    </ul>
+                    <ul class="gnav__menu_list">
+                        <li class="gnav__menu"><a href="#" class="link">おすすめ情報</a></li>
+                        <li class="gnav__menu"><a href="#" class="link">館内のご案内</a></li>
+                        <li class="gnav__menu"><a href="#" class="link">採用情報</a></li>
+                    </ul>
+                </div>
+                <div class="search_form">
+                    <div class="form__inner">
+                        <form action="">
+                            <p class="form__radio">
+                                <input type="radio" class="form__radio" name="decision" id="date1">
+                                <label for="date1">日程がお決まりの方</label>
+                            </p>
+                            <div class="form__reserve">
+                                <dl>
+                                    <dt>チェックイン</dt>
+                                    <dd>
+                                        <input type="date" name="" id="checkin" placeholder="2021年4月20日">
+                                        <span>〜</span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>チェックアウト</dt>
+                                    <dd>
+                                        <input type="date" name="" id="" placeholder="2021年4月21日">
+                                    </dd>
+                                </dl>
+                                <select class="form__select" name="" id="">
+                                    <option value="1名">1名</option>
+                                    <option value="2名">2名</option>
+                                </select>
+                                <select class="form__select" name="" id="">
+                                    <option value="1室">1室</option>
+                                    <option value="2室">2室</option>
+                                </select>
+                            </div>
+                            <p class="form__radio">
+                                <input type="radio" name="decision" id="date1">
+                                <label for="date1">日程がお決まりでない方</label>
+                            </p>
+                            <div class="btn__wrapper">
+                                <a href="#" class="btn btn-center"><span class="btn__inner">検索する</span></a>
+                                <a href="#" class="btn btn-center"><span class="btn__inner">プラン一覧</span></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <small class="copyright copyright-in_gnav">©︎KOGANEYA All Rights Reserved.</small>
+
+        </div>
+    </header>
+    <main>
+        <!-- ファーストビュー -->
+        <div class="fv">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/img/blocks/first_view/fv-img.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/blocks/first_view/fv-img2.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <!-- /ファーストビュー -->
+
+        <!-- お知らせ -->
+        <section class="news">
+            <div class="section_title">
+                お知らせ
+            </div>
+            <div class="section_title__bar"></div>
+            <ul class="news__list">
+                <li class="news__item">
+                    <a href="#" class="news__line">
+                        <div class="news__date">2021.02.02</div>
+                        <div class="news__txt">テキストが入りますテキストが入ります。テキストが入ります。テキストが入ります。</div>
+                    </a>
+                </li>
+                <li class="news__item">
+                    <a href="#" class="news__line">
+                        <div class="news__date">2021.02.02</div>
+                        <div class="news__txt">テキストが入りますテキストが入ります。テキストが入ります。テキストが入ります。</div>
+                    </a>
+                </li>
+                <li class="news__item">
+                    <a href="#" class="news__line">
+                        <div class="news__date">2021.02.02</div>
+                        <div class="news__txt">テキストが入りますテキストが入ります。テキストが入ります。テキストが入ります。</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /お知らせ -->
+
+        <!-- 当館のおもてなし -->
+        <section class="about">
+            <div class="section_title">
+                当旅館のおもてなし
+            </div>
+            <div class="section_title__bar"></div>
+            <div class="about__container">
+                <!-- <div class="image__wrap"> -->
+                <img class="about__img" src="./img/blocks/about/about_okami.jpg" alt="">
+                <!-- </div> -->
+                <div class="about_desc">
+                    <div class="about_desc__title">てきすと</div>
+                    <div class="about_desc__txt">
+                        てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。
+                    </div>
+                    <a href="#" class="btn btn-center"><span class="btn__inner">もっと見る</span></a>
+                </div>
+            </div>
+            <div class="about__container">
+                <img class="about__img" src="./img/blocks/about/about_couple.jpg" alt="">
+                <div class="about_desc">
+                    <div class="about_desc__title">てきすと</div>
+                    <div class="about_desc__txt">
+                        てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。
+                    </div>
+                    <a href="#" class="btn btn-center"><span class="btn__inner">もっと見る</span></a>
+                </div>
+            </div>
+            <div class="about__container">
+                <img class="about__img" src="./img/blocks/about/about_dinner.jpg" alt="">
+                <div class="about_desc">
+                    <div class="about_desc__title">てきすと</div>
+                    <div class="about_desc__txt">
+                        てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。てきすとがはいります。
+                    </div>
+                    <a href="#" class="btn btn-center"><span class="btn__inner">もっと見る</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- /当館のおもてなし -->
+
+        <!-- プラン選択 -->
+        <section class="plan">
+            <div class="section_title">
+                プランから選ぶ
+            </div>
+            <div class="section_title__bar"></div>
+            <ul class="plan_card__wrapper">
+
+                <li class="plan_card">
+                    <a href="#">
+                        <div class="image__wrap">
+                            <img class="plan_card__img" src="/img/blocks/plan/plan_couple.jpg" alt="">
+                        </div>
+                        <div class="plan_card__txt">
+                            カップルプラン
+                        </div>
+                    </a>
+                </li>
+                <li class="plan_card">
+                    <a href="#">
+                        <div class="image__wrap">
+                            <img class="plan_card__img" src="/img/blocks/plan/plan_dinner.jpg" alt="">
+                        </div>
+                        <div class="plan_card__txt">
+                            お食事プラン
+                        </div>
+                    </a>
+                </li>
+                <li class="plan_card">
+                    <a href="#">
+                        <div class="image__wrap">
+                            <img class="plan_card__img" src="/img/blocks/plan/plan_room.jpg" alt="">
+                        </div>
+                        <div class="plan_card__txt">
+                            お部屋プラン
+                        </div>
+                    </a>
+                </li>
+                <li class="plan_card">
+                    <a href="#">
+                        <div class="image__wrap">
+                            <img class="plan_card__img" src="/img/blocks/plan/plan_tour.jpg" alt="">
+                        </div>
+                        <div class="plan_card__txt">
+                            観光プラン
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /プラン選択 -->
+
+        <!-- 空室検索 -->
+        <section class="search">
+            <div class="section_title">空室検索</div>
+            <div class="section_title__bar"></div>
+            <div class="search_form">
+                <div class="form__inner">
+                    <form action="">
+                        <p class="form__radio">
+                            <input type="radio" class="form__radio" name="decision" id="date1">
+                            <label for="date1">日程がお決まりの方</label>
+                        </p>
+                        <div class="form__reserve">
+                            <dl>
+                                <dt>チェックイン</dt>
+                                <dd>
+                                    <input type="date" name="" id="checkin" placeholder="2021年4月20日">
+                                    <span>〜</span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>チェックアウト</dt>
+                                <dd>
+                                    <input type="date" name="" id="" placeholder="2021年4月21日">
+                                </dd>
+                            </dl>
+                            <select class="form__select" name="" id="">
+                                <option value="1名">1名</option>
+                                <option value="2名">2名</option>
+                            </select>
+                            <select class="form__select" name="" id="">
+                                <option value="1室">1室</option>
+                                <option value="2室">2室</option>
+                            </select>
+                        </div>
+                        <p class="form__radio">
+                            <input type="radio" name="decision" id="date1">
+                            <label for="date1">日程がお決まりでない方</label>
+                        </p>
+                        <div class="btn__wrapper">
+                            <a href="#" class="btn btn-center"><span class="btn__inner">検索する</span></a>
+                            <a href="#" class="btn btn-center"><span class="btn__inner">プラン一覧</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- /空室検索 -->
+
+        <!-- おすすめ情報(ブログ) -->
+        <section class="recommend">
+            <div class="section_title">おすすめ情報</div>
+            <div class="section_title__bar"></div>
+            <div class="blog_card__wrapper">
+                <div class="blog_card">
+                    <a href="#">
+                        <div class="blog_card__img_container">
+                            <img class="blog_card__img" src="./img/blocks/recommned/reccomend_onsen.jpg" alt="">
+                            <div class="blog_card__cat">温泉</div>
+                        </div>
+                        <div class="blog_card__txt_wrapper">
+                            <div class="blog_card__date">2021.3.20</div>
+                            <div class="blog_card__title">テキストが入ります。テキストが入ります。</div>
+                            <div class="blog_card__txt">テキストが抜粋されます。テキストが抜粋されます。テキストが抜粋されます。テキストが抜粋されます。</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog_card">
+                    <div class="blog_card__img_container">
+                        <img class="blog_card__img" src="./img/blocks/recommned/reccomend_fish.jpg" alt="">
+                        <div class="blog_card__cat">食事</div>
+                    </div>
+                    <div class="blog_card__txt_wrapper">
+                        <div class="blog_card__date">2021.3.20</div>
+                        <div class="blog_card__title">テキストが入ります。テキストが入ります。</div>
+                        <div class="blog_card__txt">テキストが抜粋されます。テキストが抜粋されます。テキストが抜粋されます。テキストが抜粋されます。</div>
+                    </div>
+                </div>
+                <div class="blog_card">
+                    <div class="blog_card__img_container">
+                        <img class="blog_card__img" src="./img/blocks/recommned/reccomend_alchol.jpg" alt="">
+                        <div class="blog_card__cat">お酒</div>
+                    </div>
+                    <div class="blog_card__txt_wrapper">
+                        <div class="blog_card__date">2021.3.20</div>
+                        <div class="blog_card__title">テキストが入ります。テキストが入ります。</div>
+                        <div class="blog_card__txt">テキストが抜粋されます。テキストが抜粋されます。テキストが抜粋されます。テキストが抜粋されます。</div>
+                    </div>
+                </div>
+                <div class="blog_card">
+                    <div class="blog_card__img_container">
+                        <img class="blog_card__img" src="./img/blocks/recommned/reccomend_egg.jpg" alt="">
+                        <div class="blog_card__cat">食事</div>
+                    </div>
+                    <div class="blog_card__txt_wrapper">
+                        <div class="blog_card__date">2021.3.20</div>
+                        <div class="blog_card__title">テキストが入ります。テキストが入ります。</div>
+                        <div class="blog_card__txt">テキストが抜粋されます。テキストが抜粋されます。テキストが抜粋されます。テキストが抜粋されます。</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-center"><span class="btn__inner">もっと見る</span></a>
+        </section>
+        <!-- /おすすめ情報(ブログ) -->
+
+        <!-- インスタ -->
+        <section class="insta">
+            <div class="section_title">インスタグラム</div>
+            <div class="section_title__bar"></div>
+            <ul class="insta_container">
+                <li class="insta__img">
+                    <a href="#">
+                        <img src="./img/blocks/insta/insta1.jpg" alt="">
+                    </a>
+                </li>
+                <li class="insta__img">
+                    <a href="#">
+                        <img src="./img/blocks/insta/insta2.jpg" alt="">
+                    </a>
+                </li>
+                <li class="insta__img">
+                    <a href="#">
+                        <img src="./img/blocks/insta/insta3.jpg" alt="">
+                    </a>
+                </li>
+                <li class="insta__img">
+                    <a href="#">
+                        <img src="./img/blocks/insta/insta4.jpg" alt="">
+                    </a>
+                </li>
+                <li class="insta__img">
+                    <a href="#">
+                        <img src="./img/blocks/insta/insta5.jpg" alt="">
+                    </a>
+                </li>
+                <li class="insta__img">
+                    <a href="#">
+                        <img src="./img/blocks/insta/insta6.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-center"><span class="btn__inner">もっと見る</span></a>
+        </section>
+        <!-- /インスタ -->
+
+        <!-- アクセス -->
+        <section class="access">
+            <div class="section_title">アクセス</div>
+            <div class="section_title__bar"></div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14410.338158421264!2d140.255332306698!3d38.155961777450614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8bb2c5472e3725%3A0xd4e7debf78bfd6ea!2z5LiK5bGx5Z-O!5e0!3m2!1sja!2sjp!4v1617357335475!5m2!1sja!2sjp"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="access__desc">
+                <div class="desc__container">
+                    <p class="desc__title desc__title-car">車でお越しの方</p>
+                    <p class="desc__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+                <div class="desc__container">
+                    <p class="desc__title desc__title-train">電車でお越しの方</p>
+                    <p class="desc__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <p class="desc__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+        </section>
+        <!-- /アクセス -->
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="address">
+                <div class="address__inner">
+                    <div class="title title-white">黄金屋</div>
+                    <div class="address__postnum">〒999-9999</div>
+                    <div class="address__add">黄金県黄金市黄金町1-4</div>
+                    <div class="address__phonenum">TEL. 9999-99-9999</div>
+                </div>
+            </div>
+            <ul class="gnav__menu_list">
+                <li class="gnav__menu"><a href="#" class="link">よくあるご質問</a></li>
+                <li class="gnav__menu"><a href="#" class="link">サイトマップ</a></li>
+                <li class="gnav__menu"><a href="#" class="link">お問い合わせ</a></li>
+            </ul>
+            <ul class="gnav__menu_list">
+                <li class="gnav__menu"><a href="#" class="link">おすすめ情報</a></li>
+                <li class="gnav__menu"><a href="#" class="link">館内のご案内</a></li>
+                <li class="gnav__menu"><a href="#" class="link">採用情報</a></li>
+            </ul>
+        </div>
+        <small class="copyright">©︎KOGANEYA All Rights Reserved.</small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

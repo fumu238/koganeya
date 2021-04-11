@@ -1,0 +1,82 @@
+.search {
+    background-color: #F7F2EC;
+    padding: 60px 4vw;
+    
+}
+.search_form {
+    max-width: 800px;
+    margin:0 auto;
+    border: 2px solid #faf8f2;
+    outline: 3px solid #cec6ac;
+    padding: 10px 4vw 40px;
+    box-sizing: border-box;
+	background-color: #fff6eb;
+
+}
+input {
+    font-size:1.4rem;
+
+}
+.form__inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form__radio {
+    padding: 10px 0;
+    font-size: 1.4rem;
+}
+.form__reserve {
+    display: flex;
+    font-size: 1.4rem;
+    align-items: flex-end;
+    margin-left: 30px;
+
+    span {
+        // display: inline-block;
+        margin: 0 10px 0 5px;
+    }
+}
+input[type=radio] {
+    width: 18px;
+    height: 18px;
+    // border: solid 1px #333;
+    // border-radius: 50%;
+    vertical-align: -4px;
+}
+
+input[type=date] {
+    width: 150px;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: solid 1px #cec6ac;
+}
+.form__select {
+    width: 70px;
+    padding: 10px;
+    font-size: 1.4rem;
+    border: solid 1px #cec6ac;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 760px) {
+	/* 760px以下に適用されるCSS（タブレット用） */
+    .form__reserve {
+        display: block;
+    }
+    input[type=date] {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .form__select {
+        margin-left: 0;
+    }
+
+
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+}

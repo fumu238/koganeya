@@ -1,0 +1,32 @@
+.title {
+    font-size: 3rem;
+    color: #222;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        background-image: url(../img/logo.png);
+        background-size:cover;
+        vertical-align: -7px;
+        width:40px;
+        height:40px;
+        margin-right: 5px;
+    }
+
+    &-in_header {
+        padding: 20px 5vw;
+    }
+
+    &-white {
+        color: #FFEDED;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .title {
+    
+        &-in_header {
+            padding: 10px 5vw;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.news {
+	background-color: #f7f2ec;
+}
+.news__list {
+	max-width: 750px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 4vw;
+}
+.news__line {
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.4rem;
+	color: #222222;
+	line-height: 1.5;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.news__item {
+	// margin: 30px;
+	&:not(:last-child) {
+		margin-bottom: 28px;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.news__line {
+		// display: flex;
+		align-items: center;
+	}
+    .news__date {
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,24 @@
+.fv {
+    margin-top: 80px;
+}
+.swiper-slide {
+
+    img {
+        width: 100%;
+        height: calc(100vh - 80px);
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .fv {
+        margin-top: 60px;
+    }
+    .swiper-slide {
+        img {
+            height: calc(100vh - 60px);
+        }
+    }
+    
+}

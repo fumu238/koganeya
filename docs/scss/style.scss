@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+/**
+ベーススタイル
+*/
+@import 'base/reset';
+@import 'base/base';
+
+/**
+各ブロック
+*/
+@import 'blocks/title';
+@import 'blocks/burger_nav';
+@import 'blocks/gnav';
+@import 'blocks/section';
+@import 'blocks/header';
+@import 'pages/top';
+@import 'blocks/first_view';
+@import 'blocks/footer';
+@import 'blocks/news';
+@import 'blocks/section_title';
+@import 'blocks/about';
+@import 'blocks/button';
+@import 'blocks/plan';
+@import 'blocks/search';
+@import 'blocks/recommend';
+@import 'blocks/insta';
+@import 'blocks/map';
+
