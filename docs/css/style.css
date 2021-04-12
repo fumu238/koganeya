@@ -256,10 +256,6 @@ li {
   z-index: 10;
 }
 
-.burger_nav.cross.burger_nav {
-  background-color: #7e212c;
-}
-
 .burger_nav__line {
   display: block;
   background-color: #222222;
